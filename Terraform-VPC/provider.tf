@@ -6,16 +6,17 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "terraform-remote-backend-s3-save"
+    bucket = "lordcarterstatefile2025"
     key    = "dev/terraform.tfstate"
-    region = "ap-south-1"
+    region = "ca-central-1"
   }
 }
 
 
 provider "aws" {
   # Configuration options
-  region = "ap-south-1"
+  region = "ca-central-1"
+  profile = "default"
 }
 
 
