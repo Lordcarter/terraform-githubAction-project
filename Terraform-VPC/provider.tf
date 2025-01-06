@@ -16,7 +16,7 @@ terraform {
 provider "aws" {
   # Configuration options
   region = "ca-central-1"
-  profile = "default"
+  # profile = "default"
 }
 
 
